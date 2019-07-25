@@ -116,6 +116,8 @@ GEM
       railties (>= 4.1.0, < 6.0)
       responders
       warden (~> 1.2.3)
+    erb2haml (0.1.5)
+      html2haml
     erubi (1.8.0)
     erubis (2.7.0)
     execjs (2.7.0)
@@ -288,6 +290,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   compass-rails (= 3.1.0)
   devise
+  erb2haml
   font-awesome-sass (~> 5.9.0)
   haml-rails
   jbuilder (~> 2.5)
