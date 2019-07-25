@@ -288,7 +288,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   compass-rails (= 3.1.0)
   devise
-  font-awesome-sass
+  font-awesome-sass (~> 5.9.0)
   haml-rails
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)

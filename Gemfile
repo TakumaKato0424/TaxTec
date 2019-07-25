@@ -40,7 +40,7 @@ gem 'compass-rails', '3.1.0'
 gem 'sprockets', '3.7.2'
 gem 'haml-rails'
 gem 'devise'
-gem 'font-awesome-sass'
+gem 'font-awesome-sass', '~> 5.9.0'
 
 group :production do
   gem 'unicorn', '5.4.1'
