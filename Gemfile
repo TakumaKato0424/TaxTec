@@ -38,7 +38,9 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'pry-rails'
 gem 'compass-rails', '3.1.0'
 gem 'sprockets', '3.7.2'
-gem 'rename'
+gem 'haml-rails'
+gem 'devise'
+gem 'font-awesome-sass'
 
 group :production do
   gem 'unicorn', '5.4.1'
