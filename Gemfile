@@ -41,7 +41,7 @@ gem 'sprockets', '3.7.2'
 gem 'haml-rails'
 gem 'erb2haml'
 gem 'devise'
-gem 'font-awesome-sass', '~> 5.9.0'
+gem 'font-awesome-sass'
 
 group :production do
   gem 'unicorn', '5.4.1'
