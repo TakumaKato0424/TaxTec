@@ -14,8 +14,40 @@
  *= require_self
  */
 
-@import "./reset";
 @import "config/*";
-@import "modules/*";
+@import "./reset";
 @import "font-awesome-sprockets";
 @import "font-awesome";
+@import "modules/*";
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+html {
+  font-size: 62.5%
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: $main-color;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+.hidden {
+  display: none;
+}
