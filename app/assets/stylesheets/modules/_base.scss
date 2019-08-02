@@ -2,6 +2,9 @@
   width: 100%;
   background-color: $image-color;
   box-shadow: 0 6px 5px rgba(0,0,0,0.5);
+  a{
+    color: $main-color;
+  }
   .logo{
     float: left;
     margin: 15px 0 0 15px;
@@ -11,7 +14,6 @@
       display: block;
       width: 100%;
       height: 100%;
-      color: white;
     }
   }
   .global-nav{
@@ -47,6 +49,8 @@
 }
 
 .footer {
+  position: fixed;
+  bottom: 0;
   width: 100%
 }
 

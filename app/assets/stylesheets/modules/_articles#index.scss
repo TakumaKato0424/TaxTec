@@ -4,7 +4,9 @@
     width: 100%;
     font-size: 1.4rem;
     padding: 16px 0 10px;
-    
+    a{
+      color: $body-font-color;
+    }
     .article {
       padding: 16px;
       border-bottom: 1px solid $border-color;
