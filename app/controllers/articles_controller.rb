@@ -1,6 +1,8 @@
 class ArticlesController < ApplicationController
+  before_action :set_article, only: %i[show]
+
   def index
-    
+
     @article = Article.all.order("created_at DESC")
   end
 
@@ -18,12 +20,19 @@ class ArticlesController < ApplicationController
     end
   end
 
-  def show; end;
+  def show
+
+  end
+  
   def edit; end;
   def update; end;
   def destroy; end;
 
   private
+  def set_article
+    @article = Article.find(params[:id])
+  end
+
   def article_params
     # ToDo user_id をcurrent_user.idにするようにする
     params.require(:article).permit(:title, :description).merge(user_id: 1)
