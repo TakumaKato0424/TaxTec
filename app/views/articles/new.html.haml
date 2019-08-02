@@ -1,0 +1,10 @@
+.wrapper.clearfix
+  %main.main
+    =form_with model: @article, local: true do |f|
+      %h2 題名を入力してください
+      = f.text_field :title
+
+      %h2 詳細を入力してください
+      = f.text_field :description
+
+      = f.submit "送信"
