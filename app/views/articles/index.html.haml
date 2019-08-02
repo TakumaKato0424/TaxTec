@@ -4,16 +4,17 @@
       %h2.hidden 記事
       %ul.article-box
         -# データーベース実装する
-        - 10.times do 
-          %li.article.clearfix
-            %p.article-icon
-              アイコン
-              -# ToDo = link_to userへのリンク
-            .article-discription 
-              %h3.article-title
-                記事タイトル すべての新米フロントエンドエンジニアに読んでほしい50の資料　話題になっている技術系の記事を一瞬で把握できるページを作ってみた
-              .article-discription__data
-                %p.article-user 投稿者: 投稿者の名前
-                %time.article-date 投稿日
-                %p.article-answer 解答者: エンジニアの名前
+        - @article.each do |article|
+          = link_to article_path(article.id) do
+            %li.article.clearfix
+              %p.article-icon
+                アイコン
+                -# ToDo = link_to userへのリンク
+              .article-discription 
+                %h3.article-title
+                  #{ article.title }
+                .article-discription__data
+                  %p.article-user 投稿者: 投稿者の名前
+                  %time.article-date 投稿日
+                  %p.article-answer 解答者: エンジニアの名前
   .sidemenu-right
