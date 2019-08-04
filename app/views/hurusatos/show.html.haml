@@ -5,7 +5,7 @@
   %p
     ふるさと納税を行う方の給与収入
     %lavel
-      %input{type: "text"}
+      %input{type: "text", id: "salary_income"}
   %p
     配偶者の有無 : 
     %label
@@ -15,7 +15,7 @@
       %input{type: "radio", name: "spouse", value: "1"}
         あり
     %label
-      %input{type: "radio", name: "spouse", value: "2"}
+      %input{type: "radio", name: "spouse", value: "0"}
         あり（共働き）
   %p
     子ども（高校生）の人数 : 
