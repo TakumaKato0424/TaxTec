@@ -1,1 +1,45 @@
-テストですふるさrと
+%h2 #{ @article.title }
+%p #{ @article.description }
+
+%form
+  %p
+    配偶者の有無 : 
+    %label
+      %input{type: "radio", name: "spouse", value: "0"}
+        なし
+    %label
+      %input{type: "radio", name: "spouse", value: "1"}
+        あり
+    %label
+      %input{type: "radio", name: "spouse", value: "2"}
+        あり（共働き）
+  %p
+    子ども（高校生）の人数 : 
+    %label
+      %input{type: "radio", name: "dependent", value: "0"}
+        なし
+    %label
+      %input{type: "radio", name: "dependent", value: "1"}
+        １人
+    %label
+      %input{type: "radio", name: "dependent", value: "2"}
+        ２人
+    %label
+      %input{type: "radio", name: "dependent", value: "3"}
+        ３人
+  %p
+    子ども（大学生）の人数 : 
+    %label
+      %input{type: "radio", name: "specific_dependent", value: "0"}
+        なし
+    %label
+      %input{type: "radio", name: "specific_dependent", value: "1"}
+        １人
+    %label
+      %input{type: "radio", name: "specific_dependent", value: "2"}
+        ２人
+    %label
+      %input{type: "radio", name: "specific_dependent", value: "3"}
+        ３人
+  %buttton{id: "button"} 計算する
+  %input{type: "reset", value: "リセット"}/
