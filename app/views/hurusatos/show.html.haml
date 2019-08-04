@@ -3,6 +3,10 @@
 
 %form
   %p
+    ふるさと納税を行う方の給与収入
+    %lavel
+      %input{type: "text"}
+  %p
     配偶者の有無 : 
     %label
       %input{type: "radio", name: "spouse", value: "0"}
@@ -42,4 +46,3 @@
       %input{type: "radio", name: "specific_dependent", value: "3"}
         ３人
   %buttton{id: "button"} 計算する
-  %input{type: "reset", value: "リセット"}/
