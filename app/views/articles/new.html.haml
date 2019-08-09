@@ -1,13 +1,11 @@
-.wrapper.clearfix
-  %main.main
-    =form_with model: @article, local: true do |f|
-      %h2 題名を入力してください
-      = f.text_field :title
+=form_with model: @article, local: true do |f|
+  %h2 題名を入力してください
+  = f.text_field :title
 
-      %h2 詳細を入力してください
-      = f.text_field :description
+  %h2 詳細を入力してください
+  = f.text_field :description
 
-      %h2 コントローラー名を入力してください
-      = f.text_field :controller_name
+  %h2 コントローラー名を入力してください
+  = f.text_field :controller_name
 
-      = f.submit "送信"
+  = f.submit "送信"
