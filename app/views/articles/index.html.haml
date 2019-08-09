@@ -12,6 +12,5 @@
             %h3.article-title
               #{ article.title }
             .article-discription__data
-              %p.article-user 投稿者: 投稿者の名前
-              %time.article-date 投稿日
-              %p.article-answer 解答者: エンジニアの名前
+              %p.article-user 投稿者: Takuma Kato 
+              %time.article-date 投稿日: #{ article.created_at.strftime('%Y/%m/%d') }

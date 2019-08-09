@@ -33,14 +33,15 @@
 }
 
 .wrapper {
-  width: 970px;
+  width: 1130px;
   margin: 30px auto 40px;
 }
 
 .main {
   display: block;
   float: left;
-  width: 660px;
+  width: 800px;
+  padding-left: 20px;
 }
 
 .sidemenu-right {
@@ -54,9 +55,10 @@
   width: 100%
 }
 
+// ToDo 仕様が変わったら改めて設定する
 .sidemenu-right, .footer {
-  border: 1px solid #aaa;
-  background-color: #ccc;
+  // border: 1px solid #aaa;
+  // background-color: #ccc;
 }
 
 .header, .footer {

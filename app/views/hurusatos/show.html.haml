@@ -1,48 +1,58 @@
-%h2 #{ @article.title }
-%p #{ @article.description }
+.hurusatos-main
+  .title-wrapper
+    %h1.title #{ @article.title }
+    %p.description #{ @article.description }
 
-%form
-  %p
-    ふるさと納税を行う方の給与収入
-    %lavel
-      %input{type: "text", id: "salary_income"}
-  %p
-    配偶者の有無 : 
-    %label
-      %input{type: "radio", name: "spouse", value: "0"}
-        なし
-    %label
-      %input{type: "radio", name: "spouse", value: "1"}
-        あり
-    %label
-      %input{type: "radio", name: "spouse", value: "0"}
-        あり（共働き）
-  %p
-    子ども（高校生）の人数 : 
-    %label
-      %input{type: "radio", name: "dependent", value: "0"}
-        なし
-    %label
-      %input{type: "radio", name: "dependent", value: "1"}
-        １人
-    %label
-      %input{type: "radio", name: "dependent", value: "2"}
-        ２人
-    %label
-      %input{type: "radio", name: "dependent", value: "3"}
-        ３人
-  %p
-    子ども（大学生）の人数 : 
-    %label
-      %input{type: "radio", name: "specific_dependent", value: "0"}
-        なし
-    %label
-      %input{type: "radio", name: "specific_dependent", value: "1"}
-        １人
-    %label
-      %input{type: "radio", name: "specific_dependent", value: "2"}
-        ２人
-    %label
-      %input{type: "radio", name: "specific_dependent", value: "3"}
-        ３人
-  %buttton{id: "button"} 計算する
+  %form.hurusato-form
+    %p.single-wrapper
+      %label{for: "salary_income"}
+        ふるさと納税を行う方の給与収入金額
+    %input{type: "text", class: "text-box" , id: "salary_income"}
+    %p.single-wrapper
+      配偶者の有無 : 
+      %label
+        %input{type: "radio", name: "spouse", value: "0"}
+          なし
+      %label
+        %input{type: "radio", name: "spouse", value: "1"}
+          あり
+      %label
+        %input{type: "radio", name: "spouse", value: "0"}
+          あり（共働き）
+    %p.single-wrapper
+      子ども（高校生）の人数 : 
+      %label
+        %input{type: "radio", name: "dependent", value: "0"}
+          なし
+      %label
+        %input{type: "radio", name: "dependent", value: "1"}
+          １人
+      %label
+        %input{type: "radio", name: "dependent", value: "2"}
+          ２人
+      %label
+        %input{type: "radio", name: "dependent", value: "3"}
+          ３人
+    %p.single-wrapper
+      子ども（大学生）の人数 : 
+      %label
+        %input{type: "radio", name: "specific_dependent", value: "0"}
+          なし
+      %label
+        %input{type: "radio", name: "specific_dependent", value: "1"}
+          １人
+      %label
+        %input{type: "radio", name: "specific_dependent", value: "2"}
+          ２人
+      %label
+        %input{type: "radio", name: "specific_dependent", value: "3"}
+          ３人
+    %buttton{class: "button", id: "button"} 計算する
+    %p
+      ふるさと納税の限度額は
+      %span{id: "result", class:"result"} 
+      円です。
+    %P.caution-text 
+      ※算出された金額はあくまでも目安です。
+      %br
+      ※還付・控除額は年収や家族構成、そのほかの控除額などによって異なります。詳細は税理士など専門家にお問い合わせください。
