@@ -43,6 +43,7 @@ gem 'erb2haml'
 gem 'devise'
 gem 'font-awesome-sass', "< 5.0.13"
 gem 'jquery-rails'
+gem 'bootstrap', '~> 4.3.1'
 
 group :production do
   gem 'unicorn', '5.4.1'

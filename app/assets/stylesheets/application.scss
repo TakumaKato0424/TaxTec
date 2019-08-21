@@ -18,35 +18,41 @@
 @import "./reset";
 @import "font-awesome-sprockets";
 @import "font-awesome";
+@import "bootstrap";
 @import "modules/*";
-
 .clearfix::after {
-  content: '';
-  display: block;
-  clear: both;
+    content: '';
+    display: block;
+    clear: both;
 }
 
 html {
-  font-size: 62.5%
+    font-size: 62.5%
 }
 
 body {
-  font-size: 1.2rem;
-  font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    font-size: 1.2rem;
+    font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    background: $body-background-color;
 }
 
-*, *::before, *::after {
-  box-sizing: border-box;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-a:link, a:visited, a:hover, a:active {
-  text-decoration: none;
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
 }
 
 a:hover {
-  opacity: 0.8;
+    opacity: 0.8;
 }
 
 .hidden {
-  display: none;
+    display: none;
 }
