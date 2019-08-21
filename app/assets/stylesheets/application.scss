@@ -16,9 +16,9 @@
 
 @import "config/*";
 @import "./reset";
+@import "bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
-@import "bootstrap";
 @import "modules/*";
 .clearfix::after {
     content: '';

@@ -15,6 +15,10 @@
                 width: 55px;
                 height: 55px;
                 margin-right: 16px;
+                .icon {
+                    color: $image-color;
+                    font-size: 45px;
+                }
             }
             .article-discription {
                 float: left;
