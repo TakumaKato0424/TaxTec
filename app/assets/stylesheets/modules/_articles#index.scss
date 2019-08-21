@@ -1,50 +1,45 @@
 .articles {
-  background: $article-background-color;
-  .article-box {
-    width: 100%;
-    font-size: 1.4rem;
-    padding: 16px 0 10px;
-    a{
-      color: $body-font-color;
-    }
-    .article {
-      padding: 16px;
-      border-bottom: 1px solid $border-color;
-      
-      .article-icon {
-        float: left;
-        width: 55px;
-        height: 55px;
-        margin-right: 16px;
-      }
-      
-      .article-discription {
-        float: left;
-        width: 550px;
-        .article-title {
-          font-size: 1.5rem;
-          opacity: 0.9;
-          font-weight: bold;
+    background: $article-background-color;
+    .article-box {
+        width: 100%;
+        font-size: 1.4rem;
+        padding: 16px 0 0;
+        a {
+            color: $body-font-color;
         }
-        
-        &__data {
-          margin-top: 10px;
-          font-size: 1.3rem;
-          opacity: 0.8;
-          .article-user {
-            display: inline;
-            font-size: 1.4rem;
-          }
-          
-          .article-answer {
-            display: inline-block;
-          }
-          
-          .article-date {
-            display: inline-block;
-          }
+        .article {
+            padding: 16px;
+            border-bottom: 1px solid $border-color;
+            .article-icon {
+                float: left;
+                width: 55px;
+                height: 55px;
+                margin-right: 16px;
+            }
+            .article-discription {
+                float: left;
+                width: 550px;
+                .article-title {
+                    font-size: 1.5rem;
+                    opacity: 0.9;
+                    font-weight: bold;
+                }
+                &__data {
+                    margin-top: 10px;
+                    font-size: 1.3rem;
+                    opacity: 0.8;
+                    .article-user {
+                        display: inline;
+                        font-size: 1.4rem;
+                    }
+                    .article-answer {
+                        display: inline-block;
+                    }
+                    .article-date {
+                        display: inline-block;
+                    }
+                }
+            }
         }
-      }
     }
-  }
 }
