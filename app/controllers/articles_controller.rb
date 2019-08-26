@@ -11,8 +11,7 @@ class ArticlesController < ApplicationController
 
   def create
     @article = Article.new(article_params)
-    if @article.valid?
-      @article.save
+    if @article.save
       redirect_to root_path
     else
       render :new
@@ -34,6 +33,6 @@ class ArticlesController < ApplicationController
 
   def article_params
     # ToDo user_id をcurrent_user.idにするようにする
-    params.require(:article).permit(:title, :description).merge(user_id: 1)
+    params.require(:article).permit(:title, :description, :controller_name).merge(user_id: current_user.id)
   end
 end
