@@ -7,8 +7,16 @@
         = link_to "HOME", root_path
       %li.nav-item
         = link_to "ABOUT", root_path
-      %li.nav-item
-        -# ここにお金に関する質問をする。
-        = link_to "MONEY", root_path
-      %li.nav-item
-        = link_to "POST", new_article_path
+      - if user_signed_in?
+        %li.nav-item
+          -# ここにお金に関する質問をする。
+          = link_to "REQUEST", root_path
+      - if current_user&.admin
+        %li.nav-item
+          = link_to "POST", new_article_path
+      - if user_signed_in?
+        %li.nav-item
+          = link_to "LOG_OUT", destroy_user_session_path, method: :delete
+      - else
+        %li.nav-item
+          = link_to "LOG_IN", new_user_session_path

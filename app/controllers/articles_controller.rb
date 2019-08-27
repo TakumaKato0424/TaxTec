@@ -2,7 +2,6 @@ class ArticlesController < ApplicationController
   before_action :set_article, only: %i[show]
 
   def index
-
     @article = Article.all.order("created_at DESC")
   end
 
@@ -12,8 +11,7 @@ class ArticlesController < ApplicationController
 
   def create
     @article = Article.new(article_params)
-    if @article.valid?
-      @article.save
+    if @article.save
       redirect_to root_path
     else
       render :new
@@ -35,6 +33,6 @@ class ArticlesController < ApplicationController
 
   def article_params
     # ToDo user_id をcurrent_user.idにするようにする
-    params.require(:article).permit(:title, :description).merge(user_id: 1)
+    params.require(:article).permit(:title, :description, :controller_name).merge(user_id: current_user.id)
   end
 end
