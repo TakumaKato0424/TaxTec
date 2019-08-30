@@ -1,0 +1,35 @@
+.reduced-consumption-main {
+    .reduced-consumption-form {
+        .quiz {
+            &__text {
+                margin-top: 20px;
+            }
+            &__yes-no {
+                width: 350px;
+                margin: 20px auto;
+                text-align: center;
+                font-weight: bold;
+                font-size: 1.6rem;
+                color: $image-color;
+                p {
+                    margin-top: 10px;
+                }
+                .yes {
+                    @include button($width: 140px, $height: 140px);
+                    float: left;
+                    &__icon {
+                        font-size: 8rem;
+                    }
+                }
+            }
+            .no {
+                @include button($width: 140px, $height: 140px);
+                float: right;
+                &__icon {
+                    font-size: 8rem;
+                }
+            }
+        }
+        &__explanation {}
+    }
+}
