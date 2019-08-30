@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   root 'articles#index'
   resources :articles do
     resource :hurusato, only: %i[show]
+    resource :keigen_shohizei, only: %i[show]
   end
 end
