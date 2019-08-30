@@ -6,4 +6,8 @@ class ApplicationController < ActionController::Base
   def configure_permitted_parameters
     devise_parameter_sanitizer.permit(:sign_up, keys: [:nickname])
   end
+  
+  def get_article
+    @article = Article.find(params[:article_id])
+  end
 end
