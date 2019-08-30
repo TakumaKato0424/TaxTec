@@ -4,49 +4,53 @@
     %p.description #{ @article.description }
 
   %form.hurusato-form
-    %p.single-wrapper
-      %label{for: "salary_income"}
-        ふるさと納税を行う方の給与収入金額
-    %input{type: "text", class: "text-box" , id: "salary_income"}
-    %p.single-wrapper
-      配偶者の有無 : 
-      %label
-        %input{type: "radio", name: "spouse", value: "0"}
-          なし
-      %label
-        %input{type: "radio", name: "spouse", value: "1"}
-          あり
-      %label
-        %input{type: "radio", name: "spouse", value: "0"}
-          あり（共働き）
-    %p.single-wrapper
-      子ども（高校生）の人数 : 
-      %label
-        %input{type: "radio", name: "dependent", value: "0"}
-          なし
-      %label
-        %input{type: "radio", name: "dependent", value: "1"}
-          １人
-      %label
-        %input{type: "radio", name: "dependent", value: "2"}
-          ２人
-      %label
-        %input{type: "radio", name: "dependent", value: "3"}
-          ３人
-    %p.single-wrapper
-      子ども（大学生）の人数 : 
-      %label
-        %input{type: "radio", name: "specific_dependent", value: "0"}
-          なし
-      %label
-        %input{type: "radio", name: "specific_dependent", value: "1"}
-          １人
-      %label
-        %input{type: "radio", name: "specific_dependent", value: "2"}
-          ２人
-      %label
-        %input{type: "radio", name: "specific_dependent", value: "3"}
-          ３人
+    .single-warpper
+      %p
+        %label{for: "salary_income"}
+          ふるさと納税を行う方の給与収入金額
+      %input{type: "text", class: "text-box" , id: "salary_income"}
+    .single-wrapper
+      %p
+        配偶者の有無 : 
+        %label
+          %input{type: "radio", name: "spouse", value: "0"}
+            なし
+        %label
+          %input{type: "radio", name: "spouse", value: "1"}
+            あり
+        %label
+          %input{type: "radio", name: "spouse", value: "0"}
+            あり（共働き）
+    .single-wrapper
+      %p
+        子ども（高校生）の人数 : 
+        %label
+          %input{type: "radio", name: "dependent", value: "0"}
+            なし
+        %label
+          %input{type: "radio", name: "dependent", value: "1"}
+            １人
+        %label
+          %input{type: "radio", name: "dependent", value: "2"}
+            ２人
+        %label
+          %input{type: "radio", name: "dependent", value: "3"}
+            ３人
+    .singel-wrapper
+      %p
+        子ども（大学生）の人数 : 
+        %label
+          %input{type: "radio", name: "specific_dependent", value: "0"}
+            なし
+        %label
+          %input{type: "radio", name: "specific_dependent", value: "1"}
+            １人
+        %label
+          %input{type: "radio", name: "specific_dependent", value: "2"}
+            ２人
+        %label
+          %input{type: "radio", name: "specific_dependent", value: "3"}
+            ３人
     %buttton{class: "button", id: "button"} 計算する
     %p
       ふるさと納税の限度額は
