@@ -1,0 +1,26 @@
+@mixin button($width: 100px, $height: 40px, $color: $main-color, $background: $image-color, $border: $image-color) {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: $color;
+    background: $background;
+    height: $height;
+    width: $width;
+    margin: 10px 0;
+    line-height: 20px;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid $border;
+    border-radius: 5px;
+    transition: 0.3s;
+    box-shadow: 0 6px 5px rgba(0, 0, 0, 0.5);
+    &:hover {
+        opacity: 0.7;
+    }
+    &:active {
+        transition: 0.1s;
+        position: relative;
+        top: 5px;
+        box-shadow: none;
+    }
+}
