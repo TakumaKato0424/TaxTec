@@ -1,0 +1,10 @@
+-# Todo hurusatos-mainのcssを共有アセットにする
+.hurusatos-main
+  .reduced-consumption-main
+    .title-wrapper
+      %h1.title #{ @article.title }
+      %p.description #{ @article.description }
+    = form_with url: article_keigen_shohizei_path, id: "quiz-form" do |f|
+      .reduced-consumption-form
+        = f.submit "スタート", class:"button", id: "start-button"
+        .quiz-content#quiz-content

@@ -1,5 +1,5 @@
 class HurusatosController < ApplicationController
-  def show
-    @article = Article.find(params[:article_id])
-  end
+  before_action :get_article
+
+  def show; end
 end
