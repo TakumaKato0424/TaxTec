@@ -33,9 +33,9 @@ var buildAnswerHTML = function(ans, ans_text) {
     return html;
 }
 
+var ans_data;
 $(document).on('turbolinks:load', function() {
     var start_button = document.getElementById('start-button');
-    var ans_data;
     if (start_button) {
         start_button.addEventListener('click', function(e) {
             e.preventDefault();
