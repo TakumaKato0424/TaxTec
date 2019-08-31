@@ -1,7 +1,9 @@
 class KeigenShohizeisController < ApplicationController
   before_action :get_article
   
-  def show; end
+  def show 
+    @quiz = ConTaxQuiz.new
+  end
 
   def create
     @quiz = ConTaxQuiz.where( 'id >= ?', rand(ConTaxQuiz.first.id..ConTaxQuiz.last.id)).first

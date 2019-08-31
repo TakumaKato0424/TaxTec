@@ -135,7 +135,7 @@ $(document).on('turbolinks:load', function() {
     setRadioValue('spouse', '0');
     setRadioValue('dependent', '0');
     setRadioValue('specific_dependent', '0')
-    if (document.getElementById('hurusato-form')) {
+    if (document.getElementById('hurusato-button')) {
         document.getElementById('hurusato-button').addEventListener('click', function() {
             // フォームから給与収入の金額を取得する
             var salary_income = Number($('#salary_income').val());
